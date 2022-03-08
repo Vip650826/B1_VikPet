@@ -1,0 +1,10 @@
+.gitmodules
+*.cbp
+*.depend
+*.layout
+*.txt
+/!_History/
+/.vscode/
+/bin/
+/master/
+/obj/
