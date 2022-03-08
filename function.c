@@ -7,6 +7,8 @@
 #include "names.h"
 #include "main.h"
 
+// text
+
 void FUN_Help(){
      for (int i = 0; i < FUN_Num_Max; i++) {
         Print_Function_Name(i, false);
@@ -20,9 +22,9 @@ void FUN_Memcpy(){
     memcpy(&DTB.Pavarde_[0], AsmDTB_Pav, sizeof(AsmDTB_Pav));
     DTB.ID_          = AsmDTB_ID;
     DTB.Age_         = AsmDTB_Age;
-
+    
     memcpy(&DTB_New, &DTB, sizeof(DTB));
-
+    
     printf("Vardas  : %s\n", DTB_New.Vardas_);
     printf("Pavarde : %s\n", DTB_New.Pavarde_);
     printf("ID      : %llu\n", DTB_New.ID_);
